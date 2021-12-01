@@ -1,6 +1,8 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import include, path
 
 urlpatterns = [
+    path('', include('backend.core.urls', namespace='core')),
+    path('todo/', include('backend.todo.urls', namespace='todo')),
     path('admin/', admin.site.urls),
 ]
