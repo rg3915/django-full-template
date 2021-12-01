@@ -1,7 +1,7 @@
 from rest_framework import viewsets
 
+from backend.todo.api.serializers import TodoSerializer
 from backend.todo.models import Todo
-from backend.todo.serializers import TodoSerializer
 
 
 class TodoViewSet(viewsets.ModelViewSet):
