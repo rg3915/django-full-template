@@ -13,6 +13,7 @@ from .models import Todo
 
 class TodoListView(ListView):
     model = Todo
+    paginate_by = 10
 
 
 class TodoDetailView(DetailView):
