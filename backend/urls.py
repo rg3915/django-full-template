@@ -19,7 +19,7 @@ schema_view = get_schema_view(
 )
 
 urlpatterns = [
-    # path('', include('backend.core.urls', namespace='core')),
+    path('', include('backend.core.urls', namespace='core')),
     path('todo/', include('backend.todo.urls', namespace='todo')),
     path('admin/', admin.site.urls),
 ]
