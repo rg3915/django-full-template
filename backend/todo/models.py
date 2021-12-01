@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse_lazy
 
 
 class Todo(models.Model):
@@ -12,3 +13,6 @@ class Todo(models.Model):
     class Meta:
         verbose_name = "Tarefa"
         verbose_name_plural = "Tarefas"
+
+    def get_absolute_url(self):
+        return reverse_lazy('todo:todo_detail', kwargs={'pk': self.pk})
