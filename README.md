@@ -30,6 +30,8 @@ python manage.py migrate
 python manage.py createsuperuser --username="admin" --email=""
 ```
 
+# django-full-template
+
 Este é um exemplo de um projeto completo feito com Django, Django REST framework and render template.
 
 O objetivo é ter uma estrutura completa e consisa tanto para render templates quanto para API REST.
